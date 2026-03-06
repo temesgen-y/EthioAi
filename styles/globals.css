@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primitive tokens */
+    --primitive-green: 31 122 74;
+    --primitive-teal: 14 165 164;
+    --primitive-navy: 15 23 42;
+    --primitive-light: 246 251 255;
+    --primitive-white: 255 255 255;
+    --primitive-gray: 71 85 105;
+
+    /* Semantic surface */
+    --surface-background: var(--primitive-light);
+    --surface-card: var(--primitive-white);
+    --surface-dark: var(--primitive-navy);
+    --surface-muted: 241 245 249;
+
+    /* Semantic text */
+    --text-primary: var(--primitive-navy);
+    --text-secondary: var(--primitive-gray);
+    --text-inverse: var(--primitive-white);
+
+    /* Semantic brand */
+    --brand-primary: var(--primitive-green);
+    --brand-accent: var(--primitive-teal);
+
+    /* Border */
+    --border: 203 213 225;
+    --border-input: 203 213 225;
+
+    /* State */
+    --state-success: var(--primitive-green);
+    --state-destructive: 185 28 28;
+  }
+
+  .dark {
+    --surface-background: var(--primitive-navy);
+    --surface-card: 30 41 59;
+    --surface-dark: var(--primitive-navy);
+    --surface-muted: 51 65 85;
+
+    --text-primary: 248 250 252;
+    --text-secondary: 203 213 225;
+    --text-inverse: var(--primitive-white);
+
+    --brand-primary: 34 197 94;
+    --brand-accent: 20 184 166;
+
+    --border: 51 65 85;
+    --border-input: 51 65 85;
+
+    --state-success: 34 197 94;
+    --state-destructive: 239 68 68;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+.gradient-accent {
+  background: linear-gradient(
+    135deg,
+    rgb(var(--brand-primary) / 0.08) 0%,
+    rgb(var(--brand-accent) / 0.05) 100%
+  );
+}
+
+.dark .gradient-accent {
+  background: linear-gradient(
+    135deg,
+    rgb(var(--brand-primary) / 0.15) 0%,
+    rgb(var(--brand-accent) / 0.08) 100%
+  );
+}
+
+.safe-area-pb {
+  padding-bottom: env(safe-area-inset-bottom, 0);
+}
+
+.contact-hero {
+  background: linear-gradient(
+    135deg,
+    rgb(var(--brand-primary)) 0%,
+    rgb(var(--brand-accent)) 60%,
+    rgb(var(--brand-accent)) 100%
+  );
+}
+
+.careers-hero {
+  background: rgb(var(--surface-dark));
+}
+
+.careers-hero-hex {
+  background-image: url('/hex-pattern.svg');
+  background-size: 120px 104px;
+  animation: careers-hex-glow 4s ease-in-out infinite;
+}
+
+@keyframes careers-hex-glow {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.85;
+  }
+}

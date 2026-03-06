@@ -1,0 +1,32 @@
+Home, Services, About us, Contact, Projects, Have Project
+
+
+
+Mobile-Optimized Design,
+Optimize for Speed
+SEO Optimized Elements
+Ensure Cross Browser Compatibility
+Intuitive Navigation,
+SEO integration, security (HTTPS), and interactive elements like animations or AI features.
+
+
+
+Languages
+TypeScript – main app language
+CSS – via Tailwind CSS
+SQL – via Prisma (PostgreSQL)
+Frameworks & libraries
+Frontend
+Next.js 14 – React framework with App Router
+React 18 – UI library
+TailwindCSS – utility-first CSS
+Framer Motion – animations
+Lucide React – icons
+React Hook Form – form state
+Zod – form and API validation
+class-variance-authority – component variants
+clsx + tailwind-merge – class name helpers
+Backend & data
+Next.js API Routes – backend endpoints
+Prisma – ORM for PostgreSQL
+PostgreSQL – database
