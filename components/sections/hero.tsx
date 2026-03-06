@@ -11,8 +11,8 @@ export function Hero() {
       <div className="gradient-accent absolute inset-0 -z-10" />
       <div className="mx-auto max-w-4xl text-center">
         <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ y: 20 }}
+          animate={{ y: 0 }}
           transition={{ duration: 0.5 }}
           className="text-3xl font-bold tracking-tight text-text-primary xs:text-4xl sm:text-5xl md:text-5xl lg:text-6xl"
         >
@@ -23,8 +23,8 @@ export function Hero() {
           </span>
         </motion.h1>
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ y: 20 }}
+          animate={{ y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
           className="mx-auto mt-4 max-w-2xl text-base text-text-secondary sm:mt-6 sm:text-lg"
         >
@@ -32,8 +32,8 @@ export function Hero() {
           From AI systems to custom software—delivered with precision and reliability.
         </motion.p>
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ y: 20 }}
+          animate={{ y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mt-8 flex flex-col items-center justify-center gap-3 sm:mt-10 sm:flex-row sm:gap-4"
         >

@@ -49,8 +49,8 @@ export function IndustriesServed() {
     <section className="border-y border-border bg-surface-card px-4 py-16 sm:px-5 sm:py-20 md:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ y: 20 }}
+          whileInView={{ y: 0 }}
           viewport={{ once: true }}
           className="mb-10 text-center sm:mb-12 md:mb-16"
         >
@@ -63,8 +63,7 @@ export function IndustriesServed() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial={false}
           viewport={{ once: true }}
           className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
         >
@@ -85,8 +84,7 @@ export function IndustriesServed() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial={false}
           viewport={{ once: true }}
           className="mt-12 text-center"
         >

@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { ServicePageTemplate } from '@/components/sections/service-page-template';
 import { JsonLd } from '@/components/seo/json-ld';
 import { getServiceSchema, getBreadcrumbSchema } from '@/lib/structured-data';

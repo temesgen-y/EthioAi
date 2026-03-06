@@ -58,11 +58,21 @@
 }
 
 @layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
   * {
-    @apply border-border;
+    border-color: rgb(var(--border) / 1);
   }
   body {
-    @apply bg-background text-foreground antialiased;
+    margin: 0;
+    min-height: 100vh;
+    background-color: rgb(var(--surface-background) / 1);
+    color: rgb(var(--text-primary) / 1);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 

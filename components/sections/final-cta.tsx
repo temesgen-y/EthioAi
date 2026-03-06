@@ -11,16 +11,16 @@ export function FinalCta() {
       <div className="gradient-accent absolute inset-0 -z-10" />
       <div className="mx-auto max-w-3xl text-center">
         <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ y: 20 }}
+          whileInView={{ y: 0 }}
           viewport={{ once: true }}
           className="text-3xl font-bold tracking-tight text-text-primary sm:text-4xl"
         >
           Ready to build something great?
         </motion.h2>
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ y: 20 }}
+          whileInView={{ y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
           className="mt-6 text-text-secondary"
@@ -28,8 +28,8 @@ export function FinalCta() {
           Tell us about your project. We respond within 24 hours.
         </motion.p>
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ y: 20 }}
+          whileInView={{ y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
           className="mt-10"

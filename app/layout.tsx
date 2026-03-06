@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: SEO_CONFIG.titleTemplate,
   },
   description: SEO_CONFIG.defaultDescription,
-  keywords: SEO_CONFIG.defaultKeywords,
+  keywords: [...SEO_CONFIG.defaultKeywords],
   authors: [{ name: SEO_CONFIG.author }],
   creator: SEO_CONFIG.author,
   publisher: SEO_CONFIG.author,
@@ -80,8 +80,13 @@ export default function RootLayout({
   const localBusinessJsonLd = getLocalBusinessSchema();
 
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="light" suppressHydrationWarning>
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){var k='ethioai-theme';var t=document.documentElement;try{var v=localStorage.getItem(k);if(v==='dark'||(v==='system'&&window.matchMedia('(prefers-color-scheme: dark)').matches)){t.classList.add('dark');t.classList.remove('light');}else{t.classList.add('light');t.classList.remove('dark');}}catch(e){t.classList.add('light');}})();`,
+          }}
+        />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <script
           type="application/ld+json"

@@ -15,8 +15,8 @@ export function TechStack() {
     <section className="border-y border-border bg-background px-4 py-16 sm:px-5 sm:py-20 md:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ y: 20 }}
+          whileInView={{ y: 0 }}
           viewport={{ once: true }}
           className="mb-16 text-center"
         >
@@ -29,8 +29,7 @@ export function TechStack() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial={false}
           viewport={{ once: true }}
           className="flex flex-wrap justify-center gap-4"
         >

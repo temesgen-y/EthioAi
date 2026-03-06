@@ -32,16 +32,15 @@ const services = [
 ];
 
 const container = {
-  hidden: { opacity: 0 },
+  hidden: {},
   show: {
-    opacity: 1,
     transition: { staggerChildren: 0.1 },
   },
 };
 
 const item = {
-  hidden: { opacity: 0, y: 20 },
-  show: { opacity: 1, y: 0 },
+  hidden: { y: 20 },
+  show: { y: 0 },
 };
 
 export function ServicesOverview() {
@@ -49,8 +48,8 @@ export function ServicesOverview() {
     <section className="border-y border-border bg-background px-4 py-16 sm:px-5 sm:py-20 md:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ y: 20 }}
+          whileInView={{ y: 0 }}
           viewport={{ once: true }}
           className="mb-10 text-center sm:mb-12 md:mb-16"
         >

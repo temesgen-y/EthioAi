@@ -31,8 +31,8 @@ export function WhyChooseUs() {
     <section className="border-y border-border bg-muted/30 px-4 py-16 sm:px-5 sm:py-20 md:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ y: 20 }}
+          whileInView={{ y: 0 }}
           viewport={{ once: true }}
           className="mb-16 text-center"
         >
@@ -48,8 +48,8 @@ export function WhyChooseUs() {
           {reasons.map((reason, i) => (
             <motion.div
               key={reason.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ y: 20 }}
+              whileInView={{ y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.05 }}
               className="text-center"

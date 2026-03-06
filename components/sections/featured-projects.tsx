@@ -65,8 +65,8 @@ export function FeaturedProjects() {
     <section className="border-y border-border bg-surface-card px-4 py-16 sm:px-5 sm:py-20 md:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ y: 20 }}
+          whileInView={{ y: 0 }}
           viewport={{ once: true }}
           className="mb-12 text-center"
         >
@@ -83,8 +83,8 @@ export function FeaturedProjects() {
             {paginatedProjects.map((project, i) => (
             <motion.article
               key={`${currentPage}-${project.title}`}
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ y: 10 }}
+              animate={{ y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.2 }}
               className="overflow-hidden rounded-xl border border-border bg-surface-card shadow-sm transition-shadow hover:shadow-md"
@@ -158,8 +158,8 @@ export function FeaturedProjects() {
         )}
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ y: 20 }}
+          whileInView={{ y: 0 }}
           viewport={{ once: true }}
           className="mt-12 flex justify-center"
         >
