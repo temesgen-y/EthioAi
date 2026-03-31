@@ -246,15 +246,13 @@ export default function AboutPage() {
               {
                 name: 'Mubarek Mohammed',
                 role: 'CEO & Founder',
-                image:
-                  'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop',
+                image: '/Media/mubarek-mohammed.png',
                 initials: null,
               },
               {
                 name: 'Abas Usman',
                 role: 'CTO',
-                image:
-                  'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop',
+                image: '/team-abas-usman.png',
                 initials: null,
               },
               {
@@ -296,16 +294,17 @@ export default function AboutPage() {
             ].map((member) => (
               <div
                 key={member.name}
-                className="flex flex-col items-center rounded-xl border border-border bg-surface-card p-6 shadow-sm transition-shadow hover:shadow-md"
+                className="flex min-w-0 flex-col items-center rounded-xl border border-border bg-surface-card p-6 shadow-sm transition-shadow hover:shadow-md"
               >
-                <div className="relative h-32 w-32 overflow-hidden rounded-full">
+                <div className="relative mx-auto aspect-square w-[min(100%,14rem)] shrink-0 overflow-hidden rounded-full bg-muted sm:w-[min(100%,15rem)]">
                   {member.image ? (
                     <Image
                       src={member.image}
                       alt={member.name}
                       fill
-                      className="object-cover"
-                      sizes="128px"
+                      className="object-contain"
+                      sizes="(max-width: 640px) min(90vw, 14rem), (max-width: 1024px) 40vw, 240px"
+                      priority={member.name === 'Mubarek Mohammed'}
                     />
                   ) : (
                     <div className="flex h-full w-full items-center justify-center bg-brand-accent/20 text-lg font-semibold text-brand-primary">

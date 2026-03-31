@@ -31,7 +31,7 @@ const testimonials = [
       "EthioTech's machine learning capabilities have revolutionized our data analytics. Their innovative approach and technical excellence set them apart from other vendors.",
     company: 'Ethio Telecom',
     image:
-      'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&h=200&fit=crop',
+      'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&w=200&q=80',
   },
 ];
 
