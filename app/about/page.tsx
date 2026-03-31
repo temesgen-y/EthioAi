@@ -242,7 +242,7 @@ export default function AboutPage() {
           </div>
 
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {[
+            {([
               {
                 name: 'Mubarek Mohammed',
                 role: 'CEO & Founder',
@@ -260,6 +260,7 @@ export default function AboutPage() {
                 role: 'Senior Software Engineer',
                 image: null,
                 initials: 'BB',
+                linkedinUrl: 'https://www.linkedin.com/in/masreshay/',
               },
               {
                 name: 'Micheal Taye',
@@ -291,7 +292,13 @@ export default function AboutPage() {
                 image: null,
                 initials: 'TA',
               },
-            ].map((member) => (
+            ] satisfies {
+              name: string;
+              role: string;
+              image: string | null;
+              initials: string | null;
+              linkedinUrl?: string;
+            }[]).map((member) => (
               <div
                 key={member.name}
                 className="flex min-w-0 flex-col items-center rounded-xl border border-border bg-surface-card p-6 shadow-sm transition-shadow hover:shadow-md"
@@ -341,7 +348,9 @@ export default function AboutPage() {
                     <Instagram className="h-5 w-5" />
                   </a>
                   <a
-                    href="#"
+                    href={member.linkedinUrl ?? '#'}
+                    target={member.linkedinUrl ? '_blank' : undefined}
+                    rel={member.linkedinUrl ? 'noopener noreferrer' : undefined}
                     className="text-text-secondary transition-colors hover:text-brand-primary"
                     aria-label={`${member.name} on LinkedIn`}
                   >
