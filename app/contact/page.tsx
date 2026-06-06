@@ -18,16 +18,16 @@ export const metadata = generatePageMetadata({
 const contactOffices = [
   {
     city: 'Addis Ababa',
-    address: 'Bole Road, Addis Ababa, Ethiopia',
+    address: 'Bole Road, Omedad Hotel, 3rd Floor, Addis Ababa, Ethiopia',
     email: 'contact@ethiotech.ai',
-    phone: '+251 11 123 4567',
+    phone: '+251 91 123 4176',
     hours: '09:00 AM - 18:00 PM',
   },
   {
     city: 'Frankfurt',
     address: 'Sachsenhausen Süd, Frankfurt am Main, Germany',
     email: 'contact@ethiotech.ai',
-    phone: '+251 11 123 4567',
+    phone: '+251 91 123 4176',
     hours: '09:00 AM - 18:00 PM',
   },
 ];
