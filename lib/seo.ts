@@ -19,8 +19,8 @@ export const NAP = {
   phone: '+251 91 123 4176',
   email: 'contact@ethiotech.ai',
   geo: {
-    latitude: 9.0320,
-    longitude: 38.7469,
+    latitude: 9.0031955,
+    longitude: 38.7689685,
   },
   openingHours: 'Mo-Fr 09:00-18:00',
 } as const;

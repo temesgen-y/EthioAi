@@ -139,9 +139,9 @@ export default function ContactPage() {
 
       <section className="h-[400px] w-full overflow-hidden bg-surface-muted">
         <iframe
-          src="https://www.openstreetmap.org/export/embed.html?bbox=38.72%2C9.00%2C38.78%2C9.06&layer=mapnik"
+          src="https://maps.google.com/maps?q=9.0031955,38.7689685&z=17&hl=en&output=embed"
           className="h-full w-full border-0"
-          title="Office location - Addis Ababa"
+          title="Office location - Omedad Hotel, Bole, Addis Ababa"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         />
