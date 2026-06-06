@@ -41,7 +41,7 @@ export function Footer() {
           <div className="lg:col-span-2">
             <Link href="/" className="block w-fit">
               <Image
-                src="/logo.png"
+                src="/logo2.png"
                 alt="EthioTech AI solutions plc"
                 width={140}
                 height={40}

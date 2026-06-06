@@ -77,7 +77,7 @@ export function Header() {
           className="flex shrink-0 items-center transition-opacity duration-200 hover:opacity-85 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-md"
         >
           <Image
-            src="/logo.png"
+            src="/logo2.png"
             alt="EthioTech AI solutions plc"
             width={160}
             height={44}
