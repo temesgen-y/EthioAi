@@ -9,14 +9,14 @@ export const SITE_NAME = 'EthioTech AI Solutions';
 export const NAP = {
   name: SITE_NAME,
   address: {
-    street: 'Bole Road',
+    street: 'Bole Road, Omedad Hotel, 3rd Floor',
     city: 'Addis Ababa',
     region: 'Addis Ababa',
     country: 'Ethiopia',
     countryCode: 'ET',
     postalCode: '',
   },
-  phone: '+251 11 123 4567',
+  phone: '+251 91 123 4176',
   email: 'contact@ethiotech.ai',
   geo: {
     latitude: 9.0320,
