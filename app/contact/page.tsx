@@ -9,7 +9,7 @@ import { generatePageMetadata } from '@/lib/seo';
 export const metadata = generatePageMetadata({
   title: 'Contact',
   description:
-    'Contact EthioTech AI Solutions. AI development, custom software, enterprise consulting. Addis Ababa & Frankfurt. Response within 24 hours.',
+    'Contact EthioTech AI Solutions. AI development, custom software, enterprise consulting. Addis Ababa, Ethiopia. Response within 24 hours.',
   path: '/contact',
   keywords: ['contact AI development company', 'software consulting Ethiopia'],
   ogTitle: 'Contact Us | EthioTech AI Solutions',
@@ -19,13 +19,6 @@ const contactOffices = [
   {
     city: 'Addis Ababa',
     address: 'Bole Road, Omedad Hotel, 3rd Floor, Addis Ababa, Ethiopia',
-    email: 'contact@ethiotech.ai',
-    phone: '+251 91 123 4176',
-    hours: '09:00 AM - 18:00 PM',
-  },
-  {
-    city: 'Frankfurt',
-    address: 'Sachsenhausen Süd, Frankfurt am Main, Germany',
     email: 'contact@ethiotech.ai',
     phone: '+251 91 123 4176',
     hours: '09:00 AM - 18:00 PM',
