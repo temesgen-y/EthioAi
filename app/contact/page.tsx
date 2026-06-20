@@ -20,7 +20,7 @@ const contactOffices = [
     city: 'Addis Ababa',
     address: 'Bole Road, Omedad Hotel, 3rd Floor, Addis Ababa, Ethiopia',
     email: 'contact@ethiotech.ai',
-    phone: '+251 91 123 4176',
+    phone: '+251 911554176',
     hours: '09:00 AM - 18:00 PM',
   },
 ];

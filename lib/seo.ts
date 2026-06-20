@@ -16,7 +16,7 @@ export const NAP = {
     countryCode: 'ET',
     postalCode: '',
   },
-  phone: '+251 91 123 4176',
+  phone: '+251 911554176',
   email: 'contact@ethiotech.ai',
   geo: {
     latitude: 9.0031955,
